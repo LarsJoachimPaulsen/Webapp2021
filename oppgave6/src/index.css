@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 90%;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
 }
 
 code {
