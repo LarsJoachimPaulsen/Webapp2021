@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Wrapper from './Components/Wrapper';
 import Nav from './Components/Nav';
@@ -12,12 +12,16 @@ function App() {
     alert("hei");
   }
 
+  const removeToDo = (index) => {
+    alert(`completed todo ${index.index}`)
+  }
+
   return (
     <Wrapper>
         <Nav userName="user" />
         <Form />
         <Button text="Add" clickHandler={addToDo} />
-        <Todos/>
+        <Todos clickHandler={removeToDo}/>
     </Wrapper>
   );
 }
